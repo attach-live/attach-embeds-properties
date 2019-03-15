@@ -1,2 +1,2 @@
 # attach-sdk-properties
-A copy-paste collection of all properties available in the ATTACH SDKs
+This repository contains a complete list of all properties used in the ATTACH SDKs. It can be used as reference and for copy-pasting.
