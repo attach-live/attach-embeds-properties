@@ -1,5 +1,5 @@
 <resources>
-    <string name="apiKey">dev_android_10bP6ccd2AAIFwBXkiUE4pigX8SI-CkZk</string>
+    <string name="apiKey">{apikey}</string>
     <string name="errorReporting">true</string>
 
     <string name="borderRadius">round</string>
