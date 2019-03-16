@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <script src="https://dev-video2.attach.live/v1" defer></script>
+
+    <meta property="attach" content="{JSON}">
+    <meta property="attach:site-verification" content="{verification-code}">
+    <meta property="attach:api-key" content="{api-key}">
+    <meta property="attach:startup" content="automatic|manual">
+    <meta property="attach:error-reporting" content="true|false">
+    <meta property="attach:locale" content="en-US">
+    <meta property="attach:styles-repository" content="{URL}">
+
+    <meta property="attach:user" content="{JSON} or {JWT}">
+    <meta property="attach:user:token" content="{JWT}">
+    <meta property="attach:user:id" content="{scopedUserId}">
+    <meta property="attach:user:picture" content="{URL}">
+    <meta property="attach:user:preview" content="{URL}">
+    <meta property="attach:user:username" content="{username}">
+
+    <meta property="attach:room" content="{JSON} or {URL} or {id}">
+    <meta property="attach:room:url" content="{URL}">
+    <meta property="attach:room:provider" content="twitter">
+    <meta property="attach:room:type" content="hashtag">
+    <meta property="attach:room:identifier" content="helloattach">
+
+    <meta property="attach:videocall" content="{JSON}">
+    <meta property="attach:videocall:layout" content="duo">
+    <meta property="attach:videocall:stylesheet" content="{URL}">
+    <meta property="attach:videocall:local-background-color" content="#000000">
+    <meta property="attach:videocall:local-preview" content="automatic|none|{URL}">
+    <meta property="attach:videocall:remote-background-color" content="#000000">
+    <meta property="attach:videocall:remote-preview" content="automatic|none|{URL}">
+    <meta property="attach:videocall:button-background-color" content="#FFC730">
+    <meta property="attach:videocall:focus-background-color" content="#000000">
+    
+    <meta property="attach:chat" content="{JSON}">    
+    <meta property="attach:chat:layout" content="simple|consumer|slackish|githubby">
+    <meta property="attach:chat:stylesheet" content="{URL}">
+    <meta property="attach:chat:services" content="editor,viewer">
+    <meta property="attach:chat:editor" content="plaintext|markdown">
+    <meta property="attach:chat:editor-background-color" content="#000000">
+    <meta property="attach:chat:viewer-background-color" content="#000000">
+    <meta property="attach:chat:privacy" content="public,private">
+
+    <meta property="attach:participants" content="{JSON}">
+    <meta property="attach:participants:layout" content="bar">
+    <meta property="attach:participants:stylesheet" content="{URL}">
+    <meta property="attach:participants:avatar-border-radius" content="round|rounded|square|0.5|50%">
+    <meta property="attach:participants:focus-background-color" content="#000000">
+    <meta property="attach:participants:viewer-background-color" content="#000000">
+    
+    <meta property="attach:activator" content="{JSON}">
+    <meta property="attach:activator:layout" content="playarrow|badge">
+    <meta property="attach:activator:stylesheet" content="{URL}">
+
+    <meta property="attach:overlay" content="{JSON}">
+    <meta property="attach:overlay:layout" content="dialog|sidebar|modal">
+    <meta property="attach:overlay:stylesheet" content="{URL}">
+    <meta property="attach:overlay:services" content="participants,chat,conference">
+    <meta property="attach:overlay:startup" content="open|closed">
+    <meta property="attach:overlay:position" content="bottom-left|bottom-right|top-right|top-left|left|right|top|bottom|center">
+    <meta property="attach:overlay:size" content="small|medium|large|extra-large">
+
+    <meta property="attach:conference" content="{JSON}">
+    <meta property="attach:conference:layout" content="single|duo|multi">
+    <meta property="attach:conference:stylesheet" content="{URL}">
+    <meta property="attach:conference:previews" content="{URL} or #000000,{URL} or #000000">
+    <meta property="attach:conference:header-color" content="#000000">
+    <meta property="attach:conference:background-color" content="#000000">
+
+    <meta property="attach:projector" content="{JSON}">
+    <meta property="attach:projector:layout" content="four">
+    <meta property="attach:projector:stylesheet" content="{URL}">
+    <meta property="attach:projector:previews" content="{URL} or #000000,{URL} or #000000,{URL} or #000000,{URL} or #000000">
+    <meta property="attach:projector:local-position" content="bottom-left|bottom-right|top-right|top-left|left|right|top|bottom|center">
+    <meta property="attach:projector:video-title-color" content="#000000">
+    <meta property="attach:projector:video-background-color" content="#000000">
+    <meta property="attach:projector:invite-frequency" content="10s|sec">
+    <meta property="attach:projector:invite-deviation" content="5s|sec">
+  </head>
+  <body>
+    <div class="attach-activator" data-room="{id}"></div>
+    <div class="attach-conference" data-layout="duo" data-stylesheet="{URL}"></div>
+    <div class="attach-videocall" data-layout="duo" data-stylesheet="{URL}"></div>
+    <div class="attach-chat"></div>
+    <div class="attach-participants"></div>
+  </body>
+</html>

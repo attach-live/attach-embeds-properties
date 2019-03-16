@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="samples">
+
+    <!-- Point the 'android.name property' to the '.App' file
+    where the SDK is initialized. Set the 'hardwareAccelerated' to 'true'.
+    Point the 'theme' property to the style which extends ATTACH styles.
+    https://documentation.attach.live/android/concepts/setup -->
+    <application
+        android:name=".App"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Set up the activities which extend an 'AttachActivity' -->
+        <activity
+            android:name=".OverlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <!-- Add your ATTACH API key to the 'attachApiKey' <meta-data> tag. -->
+        <meta-data
+            android:name="attachApiKey"
+            android:value="{api-key}"/>
+    </application>
+
+</manifest>

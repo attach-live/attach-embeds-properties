@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="attachStyles" parent="Attach">
+        <style name="participants" parent="Attach">
+            <item name="avatarBorderRadius">@text/borderRadius</item>
+            <item name="inputBackgroundColor">@color/attachPrimary</item>
+            <item name="viewerBackgroundColor">@color/attachPrimaryLight</item>
+        </style>
+
+        <style name="videocall" parent="Attach">
+            <item name="inputBackgroundColor">@color/attachPrimary</item>
+            <item name="buttonBackgroundColor">@color/attachAccent</item>
+        </style>
+
+        <style name="chat" parent="Attach">
+            <item name="viewerService">true</item>
+            <item name="editorService">true</item>
+            <item name="viewerBackgroundColor">@color/attachPrimaryLight</item>
+            <item name="editorBackgroundColor">@color/attachPrimary</item>
+        </style>
+    </style>
+
+</resources>
