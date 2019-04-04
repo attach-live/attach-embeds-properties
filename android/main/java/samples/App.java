@@ -18,8 +18,8 @@ public class App extends Application {
         // https://documentation.attach.live/android/concepts/error-reporting
         AttachSdk.setErrorReporting(true);
 
-        // Enable logging to Android Studio (default: false).
-        // You may want to disable in production
+        // Enable logging in Android Studio (default: false).
+        // You may want to disable logging in production to prevent leaking
         AttachSdk.setLoggingEnabled(false);
     }
 }

@@ -22,6 +22,13 @@
     <meta property="attach:room:type" content="hashtag">
     <meta property="attach:room:identifier" content="helloattach">
 
+    <meta property="attach:participants" content="{JSON}">
+    <meta property="attach:participants:layout" content="bar">
+    <meta property="attach:participants:stylesheet" content="{URL}">
+    <meta property="attach:participants:avatar-border-radius" content="round|rounded|square|0.5|50%">
+    <meta property="attach:participants:focus-background-color" content="#000000">
+    <meta property="attach:participants:viewer-background-color" content="#000000">
+
     <meta property="attach:videocall" content="{JSON}">
     <meta property="attach:videocall:layout" content="duo">
     <meta property="attach:videocall:stylesheet" content="{URL}">
@@ -40,13 +47,6 @@
     <meta property="attach:chat:editor-background-color" content="#000000">
     <meta property="attach:chat:viewer-background-color" content="#000000">
     <meta property="attach:chat:privacy" content="public,private">
-
-    <meta property="attach:participants" content="{JSON}">
-    <meta property="attach:participants:layout" content="bar">
-    <meta property="attach:participants:stylesheet" content="{URL}">
-    <meta property="attach:participants:avatar-border-radius" content="round|rounded|square|0.5|50%">
-    <meta property="attach:participants:focus-background-color" content="#000000">
-    <meta property="attach:participants:viewer-background-color" content="#000000">
 
     <meta property="attach:activator" content="{JSON}">
     <meta property="attach:activator:layout" content="playarrow|badge">
@@ -79,8 +79,7 @@
   </head>
   <body>
     <div class="attach-activator" data-room="{id}"></div>
-    <div class="attach-conference" data-layout="duo" data-stylesheet="{URL}"></div>
-    <div class="attach-videocall" data-layout="duo" data-stylesheet="{URL}"></div>
+    <div class="attach-videocall"></div>
     <div class="attach-chat"></div>
     <div class="attach-participants"></div>
   </body>
