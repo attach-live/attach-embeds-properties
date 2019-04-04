@@ -18,24 +18,18 @@ public class OverlayActivity extends AttachOverlayActivity {
     // Override style attributes.
     // https://documentation.attach.live/android/concepts/attributes
     @Override
-    public Properties withAttributes() {
-        return new Attributes()
-                .setOverlayServices()
-                .setParticipantsAvatarBorderRadius()
-                .setParticipantsFocusBackgroundColor()
-                .setParticipantsViewerBackgroundColor()
-                .setVideocallFocusBackgroundColor()
-                .setVideocallButtonBackgroundColor()
-                .setChatViewerBackgroundColor()
-                .setChatEditorBackgroundColor();
+    public Properties withProperties() {
+        return new Properties()
+                .setProperty("chat:viewer-background-color", "#FF0000")
+                .setServices(VIDEOCALL, CHAT);
     }
 
     // Change the room or style attributes interactively.
     // https://documentation.attach.live/android/concepts/interactive-changes
     private void changeRoom() {
-        setAttachRoom(new Room("twitter", "hashtag", "i-love-attach"));
-        setAttachAttributes(new Attributes()
-                .setChatViewerBackgroundColor()
-                .setChatEditorBackgroundColor();
+        setRoom(new Room("twitter", "hashtag", "i-love-attach"));
+        setProperties(new Properties()
+                .setProperty("chat:viewer-background-color", "#0000FF")
+        );
     };
 }

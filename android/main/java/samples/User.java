@@ -9,16 +9,14 @@ public class User {
      * <p>
      * If not called, a guest user will be created.
      *
+     * @param  id       a String passing the id of the user in the app
      * @param  username a String giving the username of the user
      * @param  avatar   an absolute URL giving the location of the avatar image
-     * @param  preview  an absolute URL giving the location of the preview image
      * @see             https://documentation.attach.live/android/concepts/users
      */
-    public void signinUser(String username, String avatar, String preview) {
-        AttachSdk.signinUser(new User()
-            .withUsername(username)
-            .withAvatar(avatar)
-            .withPreview(preview)
+    public void signIn(String id, String username, String avatar) {
+        AttachSdk.signIn(
+            new User(id, username, avatar)
         );
     }
 
@@ -28,12 +26,12 @@ public class User {
      * <p>
      * If not called, a guest user will be created.
      *
-     * @param  jwt a String giving the JWT (JSON Web Token) of the user
-     * @see        https://documentation.attach.live/android/concepts/jwt
+     * @param  token a String giving the JWT (JSON Web Token) of the user
+     * @see          https://documentation.attach.live/android/concepts/jwt
      */
-    public void signinUserWithJWT(String jwt) {
-        AttachSdk.signinUser(new User()
-              .fromJWT(jwt);
+    public void signIn(String token) {
+        AttachSdk.signIn(
+            new User(token)
         );
     }
 
@@ -41,7 +39,7 @@ public class User {
      * Signs your current user out of ATTACH.
      * A guest user will be created unless you sign in another user.
      */
-    public void signoutUser() {
-        AttachSdk.signoutUser();
+    public void signOut() {
+        AttachSdk.signOut();
     }
 }
