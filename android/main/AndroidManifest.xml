@@ -3,7 +3,7 @@
           package="samples">
 
     <!-- Point the 'android.name property' to the '.App' file
-    where the SDK is initialized. Set the 'hardwareAccelerated' to 'true'.
+    where the SDK is initialized. Set 'hardwareAccelerated' to 'true'.
     Point the 'theme' property to the style which extends ATTACH styles.
     https://documentation.attach.live/android/concepts/setup -->
     <application
@@ -11,8 +11,8 @@
         android:hardwareAccelerated="true"
         android:theme="@style/AppTheme">
 
-        <!-- Set up the activities which extend 'AttachOverlayActivity' -->
-        <!-- The 'AttachOverlayActivity' is only compatible with activities
+        <!-- Set up the activities which extend 'AttachOverlayActivity'.
+        The 'AttachOverlayActivity' is only compatible with activities
         that are not destroyed on orientation change, because video streams
         would otherwise be interrupted. Make sure you have set 'configChanges'
         and 'windowSoftInputMode' as shown below. -->
@@ -25,6 +25,12 @@
         <meta-data
             android:name="attachApiKey"
             android:value="{api-key}" />
+
+        <!-- Set error reporting to 'true' or 'false'. If enabled, the ATTACH SDK
+        will report warnings and errors that occur in the SDK to our servers. -->
+        <meta-data
+            android:name="attachErrorReporting"
+            android:value="{true|false}" />
     </application>
 
 </manifest>
