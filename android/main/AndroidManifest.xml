@@ -11,15 +11,20 @@
         android:hardwareAccelerated="true"
         android:theme="@style/AppTheme">
 
-        <!-- Set up the activities which extend an 'AttachActivity' -->
+        <!-- Set up the activities which extend 'AttachOverlayActivity' -->
+        <!-- The 'AttachOverlayActivity' is only compatible with activities
+        that are not destroyed on orientation change, because video streams
+        would otherwise be interrupted. Make sure you have set 'configChanges'
+        and 'windowSoftInputMode' as shown below. -->
         <activity
             android:name=".OverlayActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan" />
 
         <!-- Add your ATTACH API key to the 'attachApiKey' <meta-data> tag. -->
         <meta-data
             android:name="attachApiKey"
-            android:value="{api-key}"/>
+            android:value="{api-key}" />
     </application>
 
 </manifest>

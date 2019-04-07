@@ -20,8 +20,8 @@ public class OverlayActivity extends AttachOverlayActivity {
     @Override
     public Properties withProperties() {
         return new Properties()
-                .setProperty("chat:viewer-background-color", "#FF0000")
                 .setServices(VIDEOCALL, CHAT);
+                .setProperty("chat:viewer-background-color", "#FF0000")
     }
 
     // Change the room or style attributes interactively.
