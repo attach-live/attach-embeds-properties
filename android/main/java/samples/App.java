@@ -17,9 +17,5 @@ public class App extends Application {
         // Help us by sending anonymous error reports (default: true).
         // https://documentation.attach.live/android/concepts/error-reporting
         AttachSdk.setErrorReporting(true);
-
-        // Enable logging in Android Studio (default: false).
-        // You may want to disable logging in production to prevent leaking
-        AttachSdk.setLoggingEnabled(false);
     }
 }
