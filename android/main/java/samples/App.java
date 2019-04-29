@@ -12,7 +12,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        AttachSdk.setContext(this);
+        AttachSdk.init(this);
 
         // Help us by sending anonymous error reports (default: true).
         // https://documentation.attach.live/android/concepts/error-reporting
