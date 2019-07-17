@@ -23,30 +23,16 @@
 
     <meta property="attach:participants" content="{JSON}">
     <meta property="attach:participants:avatar-border-radius" content="round|rounded|square|0.5|50%">
-    <meta property="attach:participants:focus-background-color" content="#000000">
-    <meta property="attach:participants:viewer-background-color" content="#000000">
 
-    <meta property="attach:videocall" content="{JSON}">
-    <meta property="attach:videocall:local-background-color" content="#000000">
-    <meta property="attach:videocall:local-preview" content="automatic|none|{URL}">
-    <meta property="attach:videocall:remote-background-color" content="#000000">
-    <meta property="attach:videocall:remote-preview" content="automatic|none|{URL}">
-    <meta property="attach:videocall:button-background-color" content="#FFC730">
-    <meta property="attach:videocall:focus-background-color" content="#000000">
-    <meta property="attach:videocall:fullscreen" content="manual|automatic">
+    <meta property="attach:activator" content="{JSON}">
+    <meta property="attach:activator:embed" content="reactions">
+    <meta property="attach:activator:target" content="modal|{URL}">
 
-    <meta property="attach:chat" content="{JSON}">
-    <meta property="attach:chat:services" content="editor,viewer">
-    <meta property="attach:chat:editor-background-color" content="#000000">
-    <meta property="attach:chat:viewer-background-color" content="#000000">
-
-    <meta property="attach:overlay" content="{JSON}">
-    <meta property="attach:overlay:services" content="chat,videocall">
-    <meta property="attach:overlay:startup" content="collapsed|expanded|hidden">
-    <meta property="attach:overlay:position" content="right|left|center">
+    <meta property="attach:reactions" content="{JSON}">
+    <meta property="attach:reactions:services" content="participants,videosnaps,comments">
   </head>
   <body>
-    <div class="attach-videocall"></div>
-    <div class="attach-chat"></div>
+    <div class="attach-reactions"></div>
+    <div class="attach-activator"></div>
   </body>
 </html>
