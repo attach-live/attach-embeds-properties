@@ -1,6 +1,0 @@
-<resources>
-    <string name="apiKey">{apikey}</string>
-    <string name="errorReporting">true</string>
-
-    <string name="borderRadius">round</string>
-</resources>
