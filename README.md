@@ -1,2 +1,2 @@
 # attach-properties
-This repository contains a complete list of all properties used in the Attach embeds. Use it as reference and for copy-pasting.
+See [properties.html](properties.html) for a complete list of all properties used in the Attach embeds. Use it as a reference and for copy-pasting.
