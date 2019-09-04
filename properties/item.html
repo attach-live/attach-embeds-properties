@@ -1,0 +1,24 @@
+<!-- An item determines where we store comments. -->
+<html>
+  <head>
+    <!-- Set an item for every embed. -->
+    <!-- An item is defined by a web URL or points to social media content. -->
+
+    <!-- Set a URL to point your item to a website. -->
+    <meta property="attach:item:url" content="https://example.com">
+
+    <!-- Set provider, type and identifier for social media content items. -->
+    <!-- All three properties are required. -->
+    <meta property="attach:item:provider" content="twitter">
+    <meta property="attach:item:type" content="hashtag">
+    <meta property="attach:item:identifier" content="helloattach">
+
+    <!-- Use JSON to set multiple properties. -->
+    <meta property="attach:item" content='{"url":"https://example.com"}'>
+    <meta property="attach:item" content='{"provider":"twitter","type":"hashtag","identifier":"helloattach"}'>
+
+    <!-- You may also use the 'property/type/identifier' format directly. -->
+    <meta property="attach:item" content="https://example.com">
+    <meta property="attach:item" content="twitter/hashtag/helloattach">
+  </head>
+</html>
