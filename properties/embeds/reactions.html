@@ -1,0 +1,28 @@
+<!-- Use the reactions embed on detail pages to allow users to comment. -->
+<html>
+  <head>
+    <!-- Use meta tags for properties common to all preview embeds on the page. -->
+
+    <!-- Which services to display and in what size. -->
+    <meta property="attach:reactions:services" content="participants,videocomments,comments">
+
+    <!-- Enable or disable augmented-reality, or choose your own filters. -->
+    <meta property="attach:reactions:augmented-reality" content="true|false|tiger,anonymous,sunglasses,statue-of-liberty">
+
+    <!-- Order videocomments and set their size. -->
+    <meta property="attach:reactions:videocomments-order" content="date|favored">
+    <meta property="attach:reactions:videocomments-size" content="large|small">
+
+    <!-- Use JSON to set multiple properties. -->
+    <!-- Switch quotes "" for single quotes '' when using JSON. -->
+    <meta property='attach:reactions' content='{"services":"videocomments","videocomments-size":"small"}'>
+  </head>
+  <body>
+    <!-- Instantiate the reactions embed in a div tag. -->
+    <!-- Use the data-property to set the property that's distinct for each embed, typically the room. -->
+    <div class="attach-reactions" data-property="room={URL}"></div>
+
+    <!-- If multiple properties are distinct, use data-properties and JSON instead. -->
+    <div class='attach-reactions' data-properties='{"room":"https://example.com","reactions":{"services":"videocomments","videocomments-size":"small"}}'></div>
+  </body>
+</html>

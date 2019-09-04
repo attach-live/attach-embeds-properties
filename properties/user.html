@@ -1,0 +1,23 @@
+<!-- Set your signed-in user. -->
+<html>
+  <head>
+    <!-- Set properties of your signed-in user. -->
+    <!-- Properties are optional but will be processed together. -->
+    <!-- Renew if a different user signs in. -->
+    <meta property="attach:user:id" content="1234">
+    <meta property="attach:user:username" content="superwoman">
+    <meta property="attach:user:avatar" content="https://avatars.attach.live/avatar17.png">
+
+    <!-- Set empty content if the user signs out. -->
+    <meta property="attach:user" content="">
+
+    <!-- Prevent impersonalization using a JWT. -->
+    <!-- Signed with the secret provided by platform. -->
+    <meta property="attach:user:token" content="abcd.efgh.5678">
+
+    <!-- Use JSON to set multiple properties. -->
+    <!-- Switch quotes "" for single quotes '' when using JSON. -->
+    <meta property='attach:user' content='{"id":"1234","username":"superwoman","avatar":"https://avatars.attach.live/avatar17.png"}'>
+    <meta property='attach:user' content='{"token":"abcd.efgh.5678"}'>
+  </head>
+</html>

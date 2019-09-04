@@ -1,0 +1,22 @@
+<!-- Use the preview embed on landing or content pages. -->
+<html>
+  <head>
+    <!-- Use meta tags for properties common to all preview embeds on the page. -->
+
+    <!-- What to show when clicked. -->
+    <meta property="attach:preview:target" content="modal|detail|social|{URL}">
+    <meta property="attach:preview:embed" content="reactions">
+
+    <!-- Use JSON to set multiple properties. -->
+    <!-- Switch quotes "" for single quotes '' when using JSON. -->
+    <meta property='attach:preview' content='{"target":"modal","embed":"reactions"}'>
+  </head>
+  <body>
+    <!-- Instantiate each preview embed in a div tag. -->
+    <!-- Use the data-property to set the property that's distinct for each embed, typically the room. -->
+    <div class="attach-preview" data-property="room={URL}"></div>
+
+    <!-- If multiple properties are distinct, use data-properties and JSON instead. -->
+    <div class='attach-preview' data-properties='{"room":"https://example.com","preview":{"target":"modal","embed":"reactions"}}'></div>
+  </body>
+</html>
