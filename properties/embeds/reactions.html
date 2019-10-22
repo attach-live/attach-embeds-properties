@@ -4,11 +4,11 @@
     <!-- Use meta tags for properties common to all preview embeds on the page. -->
     <meta property="attach:reactions:services" content="participants,videos,comments">
     <meta property="attach:reactions:augmented-reality" content="true|false|tiger,anonymous,sunglasses,statue-of-liberty">
-    <meta property="attach:reactions:videos-size" content="medium|small|large">
-    <meta property="attach:reactions:videos-order" content="date|favored">
+    <meta property="attach:reactions:video-size" content="medium|small|large">
+    <meta property="attach:reactions:video-order" content="date|favored">
 
     <!-- Use JSON to set multiple properties. -->
-    <meta property='attach:reactions' content='{"services":"videos","videos-size":"small"}'>
+    <meta property='attach:reactions' content='{"services":"videos","video-size":"small"}'>
   </head>
   <body>
     <!-- Instantiate the reactions embed in a div tag and set the item. -->
@@ -16,7 +16,7 @@
 
     <!-- Add embed-specific properties as JSON if required. -->
     <div class="attach-reactions" data-property-item="https://example.com"
-      data-properties='{"services":"videos","videos-size":"small"}'>
+      data-properties='{"services":"videos","video-size":"small"}'>
     </div>
   </body>
 </html>
