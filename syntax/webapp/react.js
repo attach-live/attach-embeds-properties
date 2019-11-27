@@ -1,8 +1,8 @@
-import { Reactions } from '@attach/attach-web-embeds-react'
+import { Reactions } from '@attach/attach-embeds-react'
 
 export default {
   <Reactions properties={
-    services = 'participants,videocomments,comments',
+    services = 'participants,videos,comments',
     augmented-reality = true
   } />
 }
