@@ -5,7 +5,7 @@
  * key = 'error-reporting'
  * value = 'true'
  **/
-export const setProperty => (key, value) = window.attachEmbeds.setProperty(key, value)
+export const setProperty = (key, value) => window.attach.setProperty(key, value)
 
 /**
  * @description Set multiple properties from code.
@@ -17,4 +17,4 @@ export const setProperty => (key, value) = window.attachEmbeds.setProperty(key, 
  *   "project:identity-color": "#FFFF00"
  * }
  **/
-export const setProperties => (map) = window.attachEmbeds.setProperties(map)
+export const setProperties = (map) => window.attach.setProperties(map)

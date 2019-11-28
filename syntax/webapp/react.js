@@ -1,4 +1,4 @@
-import { Reactions } from '@attach/attach-embeds-react'
+import { Reactions } from 'attach-embeds-react'
 ​
 export default () => (
   <Reactions properties={{
