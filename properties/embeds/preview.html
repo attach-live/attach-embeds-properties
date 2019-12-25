@@ -2,11 +2,12 @@
 <html>
   <head>
     <!-- Use meta tags for properties common to all preview embeds on the page. -->
-    <meta property="attach:preview:target" content="modal|detail|social|{URL}">
+    <meta property="attach:preview:layout" content="icons|text">
+    <meta property="attach:preview:target" content="panel|detail|social|{URL}">
     <meta property="attach:preview:embed" content="reactions">
 
     <!-- Use JSON to set multiple properties. -->
-    <meta property='attach:preview' content='{"target":"modal","embed":"reactions"}'>
+    <meta property='attach:preview' content='{"target":"panel","embed":"reactions"}'>
   </head>
   <body>
     <!-- Instantiate each preview embed in a div tag and set the item. -->
@@ -14,7 +15,7 @@
 
     <!-- Add embed-specific properties as JSON if required. -->
     <div class="attach-preview" data-property-item="https://example.com"
-      data-properties='{"target":"modal","embed":"reactions"}'>
+      data-properties='{"target":"panel","embed":"reactions"}'>
     </div>
   </body>
 </html>
