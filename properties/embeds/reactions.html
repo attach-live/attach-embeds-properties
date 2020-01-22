@@ -1,10 +1,13 @@
 <!-- Use the reactions embed on detail pages to allow users to comment. -->
 <html>
   <head>
-    <!-- Use meta tags for properties common to all preview embeds on the page. -->
+    <!-- Use meta tags for the reactions embed. -->
     <meta property="attach:reactions:services" content="emotions,participants,videos,comments">
     <meta property="attach:reactions:augmented-reality" content="true|false|tiger,anonymous,sunglasses,statue-of-liberty">
     <meta property="attach:reactions:video-size" content="medium|small|large">
+    
+    <!-- The embed will take up the space it requires, up to this height. -->
+    <meta property="attach:reactions:max-height" content="2000px">
 
     <!-- Use JSON to set multiple properties. -->
     <meta property='attach:reactions' content='{"services":"videos","video-size":"small"}'>
@@ -13,7 +16,7 @@
     <!-- Instantiate the reactions embed in a div tag and set the item. -->
     <div class="attach-reactions" data-property-item="https://example.com"></div>
 
-    <!-- Add embed-specific properties as JSON if required. -->
+    <!-- If there are multiple embeds on the same page, add embed-specific properties as JSON if required. -->
     <div class="attach-reactions" data-property-item="https://example.com"
       data-properties='{"services":"videos","video-size":"small"}'>
     </div>
