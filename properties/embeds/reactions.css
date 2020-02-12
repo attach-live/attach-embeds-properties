@@ -1,6 +1,5 @@
 /* Style the Reactions embed. */
-/* Do not set height. Embeds adjust the height to their content. Set the max-height property instead: */
-/* https://github.com/attach-live/attach-properties/blob/master-m4/properties/embeds/reactions.html */
 .attach-reactions {
   width: 100%;
+  max-height: 2000px;
 }
