@@ -1,0 +1,5 @@
+/* Style the Reactions embed. */
+.attach-reactions {
+  width: 100%;
+  max-height: 2000px;
+}
