@@ -1,0 +1,18 @@
+<!-- Use the profile embed to display information about a single Attach user on your page. -->
+<html>
+  <head>
+    <!-- Use meta tags to configure profile embeds. -->
+    <meta property="attach:profile:hide-sections" content="description,place">
+  </head>
+  <body>
+    <!-- Place the profile embed on a page. -->
+    <div class="attach-profile" data-property-profile="username"></div>
+
+    <!-- If there are multiple embeds on the same page, add embed-specific properties as JSON if required. -->
+    <div class="attach-profile" data-property-profile="username"
+      data-properties='{
+        "hide-sections":"description,place"
+      }'>
+    </div>
+  </body>
+</html>

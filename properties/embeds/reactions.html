@@ -2,13 +2,13 @@
 <html>
   <head>
     <!-- Use meta tags for the reactions embed. -->
-    <meta property="attach:reactions:hide-services" content="emoticons,votes,survey,participants,videos,featured-videos,comments,featured-comments">
+    <meta property="attach:reactions:hide-sections" content="emoticons,votes,survey,participants,videos,featured-videos,comments,featured-comments">
     <meta property="attach:reactions:hide-augmented-reality" content="all|tiger,anonymous,sunglasses,statue-of-liberty">
     <meta property="attach:reactions:video-size" content="medium|small|large">
     <meta property="attach:reactions:video-rows" content="1|2|3|4">
 
     <!-- Use JSON to set multiple properties. -->
-    <meta property='attach:reactions' content='{"hide-services":"featured-videos","video-size":"small"}'>
+    <meta property='attach:reactions' content='{"hide-sections":"featured-videos","video-size":"small"}'>
   </head>
   <body>
     <!-- Instantiate the reactions embed in a div tag and set the item. -->
@@ -16,7 +16,10 @@
 
     <!-- If there are multiple embeds on the same page, add embed-specific properties as JSON if required. -->
     <div class="attach-reactions" data-property-item="https://example.com"
-      data-properties='{"hide-services":"featured-videos","video-size":"small"}'>
+      data-properties='{
+        "hide-sections":"featured-videos",
+        "video-size":"small"
+      }'>
     </div>
   </body>
 </html>
