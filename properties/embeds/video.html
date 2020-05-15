@@ -1,15 +1,11 @@
 <!-- Use the video embed to display a single video on your page. -->
 <html>
-  <head>
-    <!-- There are currently no meta tags for configuring video embeds. -->
-  </head>
   <body>
-    <!-- Place the item embed on a page. -->
-    <div class="attach-item" data-property-item="https://example.com"></div>
-
-    <!-- If there are multiple embeds on the same page, add embed-specific properties as JSON if required. -->
-    <div class="attach-reactions" data-property-item="https://example.com"
-      data-properties='{"hide-sections":"reactions"}'>
+    <script src="https://embeds.attach.live/v1" defer></script>
+    <div class="attach-item" data-property-item="https://example.com"
+      data-properties='{
+        "attach:reactions:video-size":"medium|small|large"
+      }'>
     </div>
   </body>
 </html>

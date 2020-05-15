@@ -8,7 +8,12 @@
     <meta property="attach:reactions:video-rows" content="1|2|3|4">
 
     <!-- Use JSON to set multiple properties. -->
-    <meta property='attach:reactions' content='{"hide-sections":"featured-videos","video-size":"small"}'>
+    <meta property='attach:reactions' content='{
+      "hide-sections":"emoticons,votes,survey,participants,videos,featured-videos,comments,featured-comments",
+      "attach:reactions:hide-augmented-reality":"all|tiger,anonymous,sunglasses,statue-of-liberty",
+      "video-size":"medium|small|large",
+      "attach:reactions:video-rows":"1|2|3|4"
+    }'>
   </head>
   <body>
     <!-- Instantiate the reactions embed in a div tag and set the item. -->
