@@ -1,21 +1,11 @@
-<!-- Use the preview embed on landing or content pages. -->
+<!-- Use the item embed to display . -->
 <html>
   <head>
     <!-- Use meta tags for properties common to all preview embeds on the page. -->
     <meta property="attach:preview:layout" content="icons|text">
-    <meta property="attach:preview:target" content="panel|detail|social|{URL}">
-    <meta property="attach:preview:embed" content="reactions">
-
-    <!-- Use JSON to set multiple properties. -->
-    <meta property='attach:preview' content='{"target":"panel","embed":"reactions"}'>
   </head>
   <body>
     <!-- Instantiate each preview embed in a div tag and set the item. -->
     <div class="attach-preview" data-property-item="https://example.com"></div>
-
-    <!-- Add embed-specific properties as JSON if required. -->
-    <div class="attach-preview" data-property-item="https://example.com"
-      data-properties='{"target":"panel","embed":"reactions"}'>
-    </div>
   </body>
 </html>
