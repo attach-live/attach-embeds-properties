@@ -1,6 +1,6 @@
 # Content Security Policy
 
-Your server must set the `Content-Security-Policy` (CSP) header for the Attach embeds to work.
+If you are using `Content-Security-Policy` (CSP), you must allow Attach embeds in your CSP header.
 
 ```
 Content-Security-Policy: script-src https://embeds.attach.live; frame-src https://embeds.attach.live;
